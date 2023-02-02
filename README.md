@@ -1,3 +1,3 @@
 # Fulcrum
 
-A description of this package.
+A utility framework to speed up applications development.
