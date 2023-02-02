@@ -1,3 +1,3 @@
 # Fulcrum
 
-A utility framework to speed up applications development.
+A utility SwiftUI framework to speed up applications development.
