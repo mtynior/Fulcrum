@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// Debug Utils
+// Inspired by https://www.swiftbysundell.com/articles/building-swiftui-debugging-utilities/
+
 // MARK: - Action
 public extension View {
     /// Performs `action` when  view is drawn on a screen.
