@@ -15,7 +15,7 @@ public extension View {
     /// Performs `action` when  view is drawn on a screen.
     /// It works only in DEBUG mode.
     ///
-    /// - Params:
+    /// - Parameters:
     ///     - action: Action handler to execute
     ///
     /// - Returns: Current view
@@ -33,7 +33,7 @@ public extension View {
     /// Prints `items` when  view is drawn on a screen.
     /// It works only in DEBUG mode.
     ///
-    /// - Params:
+    /// - Parameters:
     ///     - items: Items to print
     ///
     /// - Returns: Current view
@@ -48,7 +48,7 @@ public extension View {
 public extension View {
     /// Applies `modifier` onto a View only in DEBUG mode, otherwise returns original view.
     ///
-    /// - Params:
+    /// - Parameters:
     ///     - modifier: A modifier to apply in DEBUG mode.
     ///
     /// - Returns: A modified View for DEBUG mode, other wise original view.
@@ -65,7 +65,7 @@ public extension View {
 public extension View {
     /// Adds border to the View. The border is visible only in DEBUG mode.
     ///
-    /// - Params:
+    /// - Parameters:
     ///     - color: Color of the border. By default the border is red.
     ///     - width: Width of the border. By default the border is 1pt wide.
     ///
@@ -82,7 +82,7 @@ public extension View {
 public extension View {
     /// Adds background to the View. The border is visible only in DEBUG mode.
     ///
-    /// - Params:
+    /// - Parameters:
     ///     - color: Color of the background. By default the border is red.
     ///
     /// - Returns: View with border.

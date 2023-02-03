@@ -18,9 +18,9 @@ struct DismissKeyboardOnTapModifier: ViewModifier {
 }
 
 public extension View {
-    /// Dismisses keyboard when user taps on the view
+    /// Dismisses keyboard when user taps on the view.
     ///
-    /// - Returns: View with modifier
+    /// - Returns: View that can dismiss keyboard on tap.
     func dismissesKeyboardOnTap() -> some View {
         self.modifier(DismissKeyboardOnTapModifier())
     }
