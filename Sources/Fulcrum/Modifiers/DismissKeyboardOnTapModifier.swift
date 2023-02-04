@@ -5,9 +5,10 @@
 //  Created by Michal on 03/02/2023.
 //
 
-import SwiftUI
 
 #if canImport(UIKit)
+import SwiftUI
+
 struct DismissKeyboardOnTapModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
