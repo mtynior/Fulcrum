@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Fulcrum",
-    platforms: [.iOS(.v13), .macOS(.v10_15), .macCatalyst(.v13), .tvOS(.v13), .watchOS(.v6)],
+    platforms: [.iOS(.v15), .macOS(.v11), .macCatalyst(.v15), .tvOS(.v15), .watchOS(.v8)],
     products: [
         .library(name: "Fulcrum", targets: ["Fulcrum"])
     ],
