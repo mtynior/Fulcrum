@@ -65,3 +65,31 @@ This is the list of available fonts:
 | extraLarge7   | 72        |
 | extraLarge8   | 96        |
 | extraLarge9   | 128       |
+
+# Spacing
+Fulcrum provides a standarized spacing:
+```swift
+let small = Spacing.small
+let huge = Spacing.extraLarge9
+```
+
+This is the list of available spacings:
+| Name          | Size      |
+|---------------|-----------|
+| zero          | 0         |
+| mini          | 2         |
+| extraSmall    | 4         |
+| small         | 6         |
+| medium        | 8         |
+| standard      | 10        |
+| largish       | 14        |
+| large         | 16        |
+| extraLarge    | 20        |
+| extraLarge2   | 24        |
+| extraLarge3   | 30        |
+| extraLarge4   | 36        |
+| extraLarge5   | 48        |
+| extraLarge6   | 60        |
+| extraLarge7   | 72        |
+| extraLarge8   | 96        |
+| extraLarge9   | 128       |
