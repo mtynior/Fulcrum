@@ -16,10 +16,10 @@ Fulcrum Color palette is base on [Tailwind](https://tailwindcss.com/docs/customi
 ![Fulcrum_Color_Palette](https://user-images.githubusercontent.com/6362174/216835644-1962a9ec-8242-4fc1-8d1c-495e30603a00.jpg)
 
 ## Other colors
-Beside Palette Fulcrum defines other helpful colors:
+Beside Palette, Fulcrum defines other helpful colors:
 ```swift
-let color = Color.almostClear
-let anotherColor = Color.random()
+let color = Color.almostClear   // Color.white with 0.001 opacity
+let anotherColor = Color.random() // Random color
 ```
 
 ## Hex
@@ -34,7 +34,7 @@ let nilColor = Color("Hello") // returns nil
 ```
 
 ## Appearance Mode
-Fulcrum allows to instantiate a color depending on current User Interface Style:
+Fulcrum allows to instantiate a color that changes depending on current User Interface Style:
 ```swift
 let backgroundColor = Color(light: .white, dark: .black)
 ```
