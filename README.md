@@ -7,6 +7,7 @@ A utility SwiftUI framework to speed up applications development.
 ## Palette
 Fulcrum extends SwiftUI's `Color` with `Palette` namespace that constain predefined colors:
 ```swift
+import Fulcrum
 
 let primaryColor = Color.Palette.red400
 let textOnPrimatry = Color.Palette.neutral50
@@ -18,6 +19,8 @@ Fulcrum Color palette is base on [Tailwind](https://tailwindcss.com/docs/customi
 ## Other colors
 Beside Palette, Fulcrum defines other helpful colors:
 ```swift
+import Fulcrum
+
 let color = Color.almostClear   // Color.white with 0.001 opacity
 let anotherColor = Color.random() // Random color
 ```
@@ -25,6 +28,8 @@ let anotherColor = Color.random() // Random color
 ## Hex
 Fulcrum allows to instantiate `Color` from hex string:
 ```swift
+import Fulcrum
+
 let red = Color("FF0000") // RRGGBB
 let alsoRed = Color("#FF0000") 
 let anotherRed = Color("0xFF0000")
@@ -36,12 +41,16 @@ let nilColor = Color("Hello") // returns nil
 ## Appearance Mode
 Fulcrum allows to instantiate a color that changes depending on current User Interface Style:
 ```swift
+import Fulcrum
+
 let backgroundColor = Color(light: .white, dark: .black)
 ```
 
 # Fonts
 Fulcrum provides a standarized sizes of `System` font:
 ```swift
+import Fulcrum
+
 let smallFont = Font.System.extraSmall
 let hugeFont = Font.System.extraLarge9
 ```
@@ -69,6 +78,8 @@ This is the list of available fonts:
 # Spacing
 Fulcrum provides a standarized spacing:
 ```swift
+import Fulcrum
+
 let small = Spacing.small
 let huge = Spacing.extraLarge9
 ```
