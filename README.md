@@ -38,3 +38,30 @@ Fulcrum allows to instantiate a color that changes depending on current User Int
 ```swift
 let backgroundColor = Color(light: .white, dark: .black)
 ```
+
+# Fonts
+Fulcrum provides a standarized sizes of `System` font:
+```swift
+let smallFont = Font.System.extraSmall
+let hugeFont = Font.System.extraLarge9
+```
+
+This is the list of available fonts:
+
+| Name          | Size (pt) |
+|---------------|-----------|
+| extraSmall    | 8         |
+| small         | 12        |
+| standard      | 14        |
+| medium        | 16        |
+| systemControl | 16        |
+| large         | 18        |
+| extraLarge    | 20        |
+| extraLarge2   | 24        |
+| extraLarge3   | 30        |
+| extraLarge4   | 36        |
+| extraLarge5   | 48        |
+| extraLarge6   | 60        |
+| extraLarge7   | 72        |
+| extraLarge8   | 96        |
+| extraLarge9   | 128       |
