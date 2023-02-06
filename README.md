@@ -122,3 +122,86 @@ struct ContentView: View {
 }
 
 ```
+
+# View Extensions
+## Fill Parent
+Resizes the frame of a view so it fills its parent:
+```swift
+// resizes frame in both axis
+view1.fillParent() 
+
+// resizes frame only vertically
+view2.fillParent(axis: .vertical) 
+
+// resizes frame horizontally with content, inside the frame, aligned to leading edge
+view3.fillParent(axis: .horizontally, alignment: .leading)
+
+```
+
+## Erase to AnyView
+Erases current view to opaque `AnyView`:
+```swift
+let anyView =  view1.eraseToAnyView()
+```
+
+## Hide View
+Hides or shows the view:
+```swift
+// Hides view and preserves the layout
+view1.hidden(true)
+
+// Removes the view from the layout 
+view1.hidden(true, shouldRemove: true)
+```
+
+## View + Condition
+Transforms view based on the result of the condition:
+```swift
+@State var numberOfItems: Int
+
+// if
+view1.if(numberOfItems == 0) { originalView
+  originalView.background(Color.red)
+}
+
+// if + else
+view1.if(
+  numberOfItems == 0, 
+  onTrueTransform: { originalView in
+    originalView.background(Color.red)
+  }, onFalseTransform: { originalView in
+    originalView.background(Color.green)
+  }
+)
+```
+
+## View + Debug
+Perform action when view is drawn on the screen. Action is triggered only in `Debug` mode.
+```swift
+view1.debugAction {
+  // do something
+}
+```
+
+Prints message in the console when view is drawn on the screen. Action is triggered only in `Debug` mode.
+```swift
+view1.debugPrint("Hello world")
+```
+
+Adds background to the view. The background is applied only in `Debug` mode
+```swift
+// adds red background
+view1.debugBackground()
+
+// adds specified background
+view1.debugBackground(Color.yellow)
+```
+
+Adds border to the view. The borders is added only in `Debug` mode
+```swift
+// adds 1pt red border
+view1.debugBorder()
+
+// adds specified background
+view1.debugBorder(Color.yellow, width: 2)
+```
