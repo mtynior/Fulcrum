@@ -109,31 +109,23 @@ This is the list of available spacings:
 ## Dismiss Keyboard on tap
 This modifier dismisses keyboard when user tap on the view:
 ```swift
-import SwiftUI
-import Fulcrum
-
-struct ContentView: View {
-  var body: some View {
-    VStack {
-      // ...
-    }
-    .dismissesKeyboardOnTap()
-  }
+VStack {
+  // ...
 }
-
+.dismissesKeyboardOnTap()
 ```
 
 # View Extensions
 ## Fill Parent
 Resizes the frame of a view so it fills its parent:
 ```swift
-// resizes frame in both axis
+// Resizes frame in both axis
 view1.fillParent() 
 
-// resizes frame only vertically
+// Resizes frame only vertically
 view2.fillParent(axis: .vertical) 
 
-// resizes frame horizontally with content, inside the frame, aligned to leading edge
+// Resizes frame horizontally with content, inside the frame, aligned to leading edge
 view3.fillParent(axis: .horizontally, alignment: .leading)
 
 ```
@@ -160,7 +152,7 @@ Transforms view based on the result of the condition:
 @State var numberOfItems: Int
 
 // if
-view1.if(numberOfItems == 0) { originalView
+view1.if(numberOfItems == 0) { originalView in
   originalView.background(Color.red)
 }
 
@@ -190,18 +182,18 @@ view1.debugPrint("Hello world")
 
 Adds background to the view. The background is applied only in `Debug` mode
 ```swift
-// adds red background
+// Adds red background
 view1.debugBackground()
 
-// adds specified background
+// Adds specified background
 view1.debugBackground(Color.yellow)
 ```
 
 Adds border to the view. The borders is added only in `Debug` mode
 ```swift
-// adds 1pt red border
+// Adds 1pt red border
 view1.debugBorder()
 
-// adds specified background
+// Adds specified background
 view1.debugBorder(Color.yellow, width: 2)
 ```
