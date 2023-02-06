@@ -104,3 +104,21 @@ This is the list of available spacings:
 | extraLarge7   | 72        |
 | extraLarge8   | 96        |
 | extraLarge9   | 128       |
+
+# View modifiers
+## Dismiss Keyboard on tap
+This modifier dismisses keyboard when user tap on the view:
+```swift
+import SwiftUI
+import Fulcrum
+
+struct ContentView: View {
+  var body: some View {
+    VStack {
+      // ...
+    }
+    .dismissesKeyboardOnTap()
+  }
+}
+
+```
