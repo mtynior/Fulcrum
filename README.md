@@ -2,6 +2,46 @@
 
 A utility SwiftUI framework to speed up applications development.
 
+# Getting started 
+
+## Swift Package Manager
+You can add SwiftBus to your project by adding it as a dependency in your `Package.swift` file:
+```swift
+// swift-tools-version:5.7
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
+let package = Package(
+    name: "MyProject",
+    products: [
+        .library(name: "MyProject", targets: ["MyProject"])
+    ],
+    dependencies: [
+         .package(url: "https://github.com/mtynior/Fulcrum.git", .upToNextMajor(from: "0.5.0")),
+    ],
+    targets: [
+        .target(name: "MyProject", dependencies: ["Fulcrum"]),
+        .testTarget(name: "MyProjectTests", dependencies: ["MyProject"])
+    ]
+)
+```
+
+## Xcode
+
+<p align="center">
+    <img src="https://res.cloudinary.com/mtynior/image/upload/v1634748957/development/match_xcode_oleolc.jpg">
+</p>
+
+Open your project in Xcode, then:
+1. Click File -> Add Packages,
+2. In the search bar type: `https://github.com/mtynior/Fulcrum.git` and press `Enter`,
+3. Once Xcode finds the library, set Dependency rule to `Up to next major version`,
+4. Click Add Package,
+5. Select the desired Target (If you have multiple targets, you can add the dependency manually from Xcode)
+6. Confirm selection by clicking on Add Package.
+
+
 # Colors
 
 ## Palette
