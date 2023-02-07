@@ -1,6 +1,12 @@
-# Fulcrum
-
-A utility SwiftUI framework to speed up applications development.
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/6362174/217308194-4a98adad-2344-46c3-a1dd-b55676669739.png" height="256" />
+    <h1>Fulcrum</h1>
+    <h3>A utility SwiftUI framework to speed up application development.</h3>
+</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/language-Swift-orange" />
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" />
+</p>
 
 # Getting started 
 
