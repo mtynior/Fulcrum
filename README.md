@@ -198,12 +198,12 @@ Transforms view based on the result of the condition:
 @State var numberOfItems: Int
 
 // if
-view1.if(numberOfItems == 0) { originalView in
+view1.applyIf(numberOfItems == 0) { originalView in
   originalView.background(Color.red)
 }
 
 // if + else
-view1.if(
+view1.applyIf(
   numberOfItems == 0, 
   onTrueTransform: { originalView in
     originalView.background(Color.red)

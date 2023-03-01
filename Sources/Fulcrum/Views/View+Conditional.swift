@@ -16,7 +16,7 @@ public extension View {
     ///   - transform: The transform to apply to the source `View`.
     ///
     /// - Returns: Either the original `View` or the modified `View` if the condition is `true`.
-    @ViewBuilder func `if`<Content: View>(_ condition: @autoclosure () -> Bool, transform: (Self) -> Content) -> some View {
+    @ViewBuilder func applyIf<Content: View>(_ condition: @autoclosure () -> Bool, transform: (Self) -> Content) -> some View {
         if condition() {
             transform(self)
         } else {
@@ -32,7 +32,7 @@ public extension View {
     ///   - onFalseTransform: The transform to apply to when condition is` false`
     ///
     /// - Returns: The modified `View`
-    @ViewBuilder func `if`<TrueContent: View, FalseContent: View>(
+    @ViewBuilder func applyIf<TrueContent: View, FalseContent: View>(
         _ condition: @autoclosure () -> Bool,
         onTrueTransform: (Self) -> TrueContent,
         onFalseTransform: (Self) -> FalseContent
